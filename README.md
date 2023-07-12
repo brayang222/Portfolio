@@ -23,7 +23,7 @@
 
 ## Overview
 
-![screenshot](/screen.png)
+![screenshot](/portafolio.webp)
 
 ### Built With
 

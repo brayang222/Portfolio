@@ -39,9 +39,6 @@ body {
   background-color: rebeccapurple;
 }
 
-
-
-
 .about-contain {
   text-align: center;
   height: 30%;
@@ -201,6 +198,8 @@ a {
   color: rgba(249, 249, 249, 0.4);
 }
 
+/* ------------------------------------------------------------------------------------------------- */
+
 .proyects-container {
   max-width: 80%;
   height: 100%;
@@ -314,6 +313,12 @@ a {
 .image-container:hover .image-overlay {
   opacity: 1;
   box-shadow: 1px 1px 3px gray;
+}
+
+.codepage{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 
 .hidden {
