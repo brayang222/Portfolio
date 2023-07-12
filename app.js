@@ -1,7 +1,7 @@
 const TituloProyect = document.getElementsByClassName('text-proyect')[0];
 const h1Titulo = document.createElement('h1');
 
-h1Titulo.textContent = "<Proyects />";
+h1Titulo.textContent = "<Projects />";
 
 
 TituloProyect.appendChild(h1Titulo);
@@ -45,22 +45,21 @@ btnSwitch.addEventListener('click', () => {
   btnSwitch.classList.toggle('active');
 
   if (btnSwitch.classList.contains('active')) {
-    languaje.textContent = `Fast learner, always willing to learn new skills, 
-  keep up to date with the latest technologies and programming practices, with a
-   strong background in web programming, with basic knowledge of php, c#, 
-   javascript and excel visual basic (creating macros), Data management with MySQL
-    and a passion for solving complex problems as well. My ability to analyze,
-     design and develop efficiently allows me to deliver exceptional results.`
+    languaje.textContent = `Quick learner, learning with the latest technologies and
+    programming practices, with a solid
+    web programming training
+    basic knowledge of php, c#, javascript
+    and visual basic of excel (creating macros),
+    also data management with MySQL. My
+    ability to analyze, design and
+    Developing efficiently allows me to deliver exceptional results.`
   } else {
-    languaje.textContent = `Aprendiz rápido, siempre dispuesto a
-    adquirir nuevas habilidades, mantenerme
-    actualizado con las últimas tecnologías y
+    languaje.textContent = `Aprendiz rápido, aprendiendo con las últimas tecnologías y
     prácticas de programación, con una sólida
     formación en programación web, con
     conocimientos básicos de php, c#, JavaScript
     y visual basic de excel (creando macros),
-    también manejo de datos con MySQL y una
-    pasión por resolver problemas complejos. Mi
+    también manejo de datos con MySQL. Mi
     capacidad para analizar, diseñar y
     desarrollar eficientemente me permite entregar resultados excepcionales.`
   };
