@@ -45,14 +45,14 @@ btnSwitch.addEventListener('click', () => {
   btnSwitch.classList.toggle('active');
 
   if (btnSwitch.classList.contains('active')) {
-    languaje.textContent = `I am a fast learner, always willing to learn new skills, 
+    languaje.textContent = `Fast learner, always willing to learn new skills, 
   keep up to date with the latest technologies and programming practices, with a
    strong background in web programming, with basic knowledge of php, c#, 
    javascript and excel visual basic (creating macros), Data management with MySQL
     and a passion for solving complex problems as well. My ability to analyze,
      design and develop efficiently allows me to deliver exceptional results.`
   } else {
-    languaje.textContent = `Soy un aprendiz rápido, siempre dispuesto a
+    languaje.textContent = `Aprendiz rápido, siempre dispuesto a
     adquirir nuevas habilidades, mantenerme
     actualizado con las últimas tecnologías y
     prácticas de programación, con una sólida
