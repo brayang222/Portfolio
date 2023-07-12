@@ -369,11 +369,10 @@ img {
 .about {
   width: 100%;
   height: 100%;
-  text-align: center;
+  text-align:left;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 100px;
- 
 }
 
 @media (max-width: 1000px) {
@@ -386,6 +385,10 @@ img {
   .about {
     font-size: 7px;
   }
+}
+
+#languaje {
+  max-width: 75ch;
 }
 
 .tecnologies-about {
