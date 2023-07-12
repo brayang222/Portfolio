@@ -121,6 +121,10 @@ body {
 
 /* ----------------------------------------------------------*/
 
+.name span {
+  color: rgba(150, 1, 176, 0.568);
+}
+
 .logo-header{
   position: relative;
   display: inline-block;
