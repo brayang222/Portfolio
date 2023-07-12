@@ -3,8 +3,6 @@ const h1Titulo = document.createElement('h1');
 
 h1Titulo.textContent = "<Proyects />";
 
-h1Titulo.textContent = "<Proyectos />";
-
 
 TituloProyect.appendChild(h1Titulo);
 // ------------------------ MOSTRAR MÁS -------------------------------------
