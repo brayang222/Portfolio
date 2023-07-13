@@ -472,9 +472,14 @@ img {
 .aling{
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
+}
+
+.text-about {
+  font-size: 70px;
+  color: #9846eb;
 }
 @media(min-width:768px){
   .aling{
@@ -493,8 +498,84 @@ img {
 
 
 /* --------------------------------- FIN SWITCH ----------------------------------------------------------------*/
+/* --------------------------------- Carrousel ----------------------------------------------------------------*/
+#certifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#certifications h1 {
+  margin: 100px 0;
+  font-size: 70px;
+  color: #9846eb;
+}
 
+.contenedor-slider {
+  width: 700px;
+  max-height: 500px;
+  margin: 0 auto;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.slider-izq, .slider-der {
+  font-size: 60px;
+  cursor: pointer;
+  transition: font-size .3s ease, transform .3s ease;
+}
+.slider-izq:hover, .slider-der:hover {
+  font-size: 70px;
+}
+.slider-der:hover {
+  transform: translate(15px);
+}
+.slider-izq:hover {
+  transform: translate(-15px);
+}
+
+.screen-slider {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .contenedor-slider {
+    width: 600px;
+    padding: 50px 0;
+  }
+  #certifications h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-slider {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .contenedor-slider {
+    width: 100%;
+  }
+  .slider-izq, .slider-der {
+    font-size: 20px;
+  }
+  .slider-izq:hover, .slider-der:hover {
+    font-size: 20px;
+    transform: translate(0);
+  }
+
+}
+/* ---------------------------------- FIN CAROUSEL ------------------------------------------------- */
 
 
 

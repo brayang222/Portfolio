@@ -71,7 +71,45 @@ btnSwitch.addEventListener('click', () => {
 
 });
 
+// ------------------------------ Carrousel -------------------------------------------------
 
+let imgCarrousel = [
+  "imagen/js.webp",
+  "imagen/css1.webp",
+  "imagen/css2.webp",
+  "imagen/a1.webp"
+]
+
+document.imagen.src = imgCarrousel[0]
+
+let sliderDer = document.querySelector('.slider-der');
+let sliderIzq = document.querySelector('.slider-izq');
+
+var contadorSlide = 0;
+
+function derecha () {
+  contadorSlide++;
+  contadorSlide === imgCarrousel.length ? contadorSlide = 0 : contadorSlide;
+  document.imagen.src = imgCarrousel[contadorSlide] 
+}
+let interval = setInterval(derecha, 5000);
+sliderDer.addEventListener('click', function(){
+  clearInterval(interval);
+  derecha()
+  interval = setInterval(derecha, 5000);
+})
+
+function izquierda () {
+  contadorSlide--;
+  contadorSlide < 0 ? contadorSlide = imgCarrousel.length -1 : contadorSlide;
+  document.imagen.src = imgCarrousel[contadorSlide]
+}
+
+sliderIzq.addEventListener('click', function(){
+  clearInterval(interval);
+  derecha()
+  interval = setInterval(derecha, 5000);
+})
 
 
 

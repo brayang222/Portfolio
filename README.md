@@ -12,10 +12,6 @@
     <a href="https://github.com/brayang222/Portfolio">
       Solution
     </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
-      Challenge
-    </a>
   </h3>
 </div>
 
@@ -37,4 +33,4 @@
 
 - Website [portfolio.com](https://portfoliobra.netlify.app/)
 - GitHub [@brayang222](https://github.com/your-usermame)
-- Twitter [@your-twitter](https://twitter.com/BrayanGmz_)
+- Twitter [@twitter](https://twitter.com/BrayanGmz_)
