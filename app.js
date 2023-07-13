@@ -2,9 +2,14 @@ const TituloProyect = document.getElementsByClassName('text-proyect')[0];
 const h1Titulo = document.createElement('h1');
 
 h1Titulo.textContent = "<Projects />";
-
-
 TituloProyect.appendChild(h1Titulo);
+
+// ----------------------- SCROLL -------------------------------------------------
+window.addEventListener('scroll', function(){
+  let navbar = document.querySelector('header')
+  navbar.classList.toggle('sticky', window.scrollY > 0);
+})
+
 // ------------------------ MOSTRAR MÁS -------------------------------------
 const hidden = document.getElementsByClassName('proyects-container');
 const btnMostrarImg = document.getElementById('mostrar-img');

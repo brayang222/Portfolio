@@ -13,46 +13,37 @@ body {
 .header-home {
   display: flex;
   justify-content: center;
-  top: 0;
   color: whitesmoke;
   gap: 56px;
   padding: 32px 16px;
+  transition: padding .7s ease;
 }
 
 
 @media (max-width: 1000px) {
   .header-home {
     gap: 20px;
-
   }
 }
 
 .header-home a {
   font-size: 14px;
+  transition: color 1s ease;
 }
 
 .fix {
   width: 100%;
-
-}
-
-.proyects-contain {
-  height: 50%;
-  text-align: center;
-}
-
-.proyects-contain:hover {
-  background-color: rebeccapurple;
-}
-
-.about-contain {
-  text-align: center;
-  height: 30%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #121212;
+  transition: background-color 0.5s ease;
 }
 
 .hover:hover {
-  background-color: rgb(111, 31, 190);
-  z-index: 100;
+  transition: padding .3s ease;
+  background-color: #9846eb;
+  padding: 5px 10px;
 }
 
 .container {
@@ -62,6 +53,7 @@ body {
 }
 
 .header {
+  margin-top: 30px;
   width: 100%;
   height: 100%;
   color: white;
@@ -107,7 +99,28 @@ body {
   }
 }
 
-/* ----------------------------------------------------------*/
+/* ------------------------- FIN HEADER ---------------------------------*/
+/* ------------------------- SCROLL --------------------------------------*/
+  
+  .fix.sticky {
+    background-color: #f5f5f5cb;
+  }
+
+  .fix.sticky > .header-home{
+    padding: 10px 16px;        
+  }
+  .fix.sticky > .header-home a{
+    color: black;     
+  }
+  .fix.sticky > .header-home > .hover:hover a{
+    color: white;     
+  }
+  .fix.sticky > .header-home > .hover:hover{
+    background-color: #4c4654;   
+
+  } 
+
+/* ------------------------- FIN SCROLL -----------------------------------*/
 
 .name span {
   color: #a24af9;
