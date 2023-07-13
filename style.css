@@ -5,29 +5,35 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1a1a1a;
   color: white;
-  font-family: 'Courier New', Courier, monospace
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .header-home {
-  background-color: rgba(249, 249, 249, 0.3);
-  height: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  color: whitesmoke;
+  gap: 56px;
+  padding: 32px 16px;
+}
+
+
+@media (max-width: 1000px) {
+  .header-home {
+    gap: 20px;
+
+  }
+}
+
+.header-home a {
+  font-size: 14px;
 }
 
 .fix {
-  width: 80px;
-  left: 0;
-  top: 0;
-  position: fixed;
-  bottom: 0;
-}
+  width: 100%;
 
-@media (max-width: 1000px) {
-  .fix {
-    display: none;
-  }
 }
 
 .proyects-contain {
@@ -44,36 +50,18 @@ body {
   height: 30%;
 }
 
-.home-contain {
-  height: 20%;
-  text-align: center;
-
-
-}
-
-.home-contain,
-.proyects-contain,
-.about-contain {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: -7px;
-}
-
 .hover:hover {
-  background-color: rebeccapurple;
+  background-color: rgb(111, 31, 190);
   z-index: 100;
 }
 
 .container {
-
-  background-color: black;
   width: 80%;
   height: 100vh;
   margin: 0 auto;
 }
 
 .header {
-
   width: 100%;
   height: 100%;
   color: white;
@@ -91,11 +79,11 @@ body {
 }
 
 .text {
-  font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .header h1 {
@@ -122,7 +110,7 @@ body {
 /* ----------------------------------------------------------*/
 
 .name span {
-  color: rgba(150, 1, 176, 0.568);
+  color: #a24af9;
 }
 
 .logo-header{
@@ -176,7 +164,6 @@ body {
 }
 
 .social {
-  background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -184,12 +171,14 @@ body {
 }
 
 .icons {
-  font-size: 70px;
+  font-size: 48px;
   margin: 20px;
+  transition: color .3s ease, transform .3s ease;
 }
 
 .icons:hover {
   color: rebeccapurple;
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -199,7 +188,8 @@ body {
 }
 
 a {
-  color: rgba(249, 249, 249, 0.4);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -214,7 +204,6 @@ a {
   /* Columna única por defecto */
   grid-gap: 32px;
   /* Espacio entre las columnas */
-
 }
 
 @media (min-width: 1120px) {
@@ -293,7 +282,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(74, 4, 83, 0.9);
+  background-color: #4d0897a9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -338,15 +327,17 @@ a {
   margin-bottom: 100px;
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: center;
+}
 
+.btn-mostrar button {
+  border: none;
 }
 
 #mostrar-img {
-  padding: 10px 20px;
-  background-color: #18144C;
+  padding: 15px 25px;
+  background-color: #501384;
   opacity: .8;
   color: white;
   cursor: pointer;
