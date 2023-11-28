@@ -50,25 +50,17 @@ btnSwitch.addEventListener('click', () => {
   btnSwitch.classList.toggle('active');
 
   if (btnSwitch.classList.contains('active')) {
-    languaje.textContent = `Quick learner, learning with the latest technologies and
-    programming practices, with a solid
-    web programming training
-    basic knowledge of php, c#, javascript
-    and visual basic of excel (creating macros),
-    also data management with MySQL. My
-    ability to analyze, design and
-    Developing efficiently allows me to deliver exceptional results.`
+    languaje.textContent = `programmer with a strong background in web development and outstanding skills in
+      efficient design and the development of exceptional solutions. My ability to analyze and create,
+      coupled with my focus on the latest technologies, ensures the delivery of outstanding results. 
+      Nice to meet you!
+    `
   } else {
-    languaje.textContent = `Aprendiz rápido, aprendiendo con las últimas tecnologías y
-    prácticas de programación, con una sólida
-    formación en programación web, con
-    conocimientos básicos de php, c#, JavaScript
-    y visual basic de excel (creando macros),
-    también manejo de datos con MySQL. Mi
-    capacidad para analizar, diseñar y
-    desarrollar eficientemente me permite entregar resultados excepcionales.`
+    languaje.textContent = `Programador con una sólida formación en desarrollo web y habilidades
+     destacadas en el diseño eficiente y desarrollo de soluciones excepcionales. Mi capacidad para 
+     analizar y crear, junto con mi enfoque en las últimas tecnologías, garantiza la entrega de resultados
+      sobresalientes. ¡Encantado en conocerte!`
   };
-
 });
 
 // ------------------------------ Carrousel -------------------------------------------------
@@ -77,7 +69,9 @@ let imgCarrousel = [
   "imagen/js.webp",
   "imagen/css1.webp",
   "imagen/css2.webp",
-  "imagen/a1.webp"
+  "imagen/a1.webp",
+  "imagen/cyber.webp",
+  "imagen/cisco.webp"
 ]
 
 document.imagen.src = imgCarrousel[0]
