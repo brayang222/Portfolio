@@ -33,6 +33,12 @@ body {
   transition: color 1s ease;
 }
 
+@media (max-width: 500px) {
+  .certifications {
+    display: none !important;
+  }
+}
+
 .fix {
   width: 100%;
   position: fixed;
@@ -124,7 +130,7 @@ body {
 
 /* ------------------------- FIN SCROLL -----------------------------------*/
 
-.name span {
+.name span:nth-child(2) {
   color: #a24af9;
 }
 
@@ -235,6 +241,7 @@ a {
 }
 
 .overlay-button {
+  display: flex;
   padding: 10px 20px;
   background-color: #8028a9;
   color: white;
@@ -245,6 +252,11 @@ a {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 25px;
+}
+
+.overlay-button h1 {
+  font-size: 25px;
+  font-weight: 400;
 }
 
 @media (max-width: 678px) {
@@ -333,6 +345,7 @@ a {
 }
 
 #mostrar-img {
+  display: flex;
   padding: 15px 25px;
   background-color: #501384;
   opacity: .8;
@@ -386,11 +399,12 @@ img {
   font-size: 100px;
   padding-bottom: 100px;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 678px) {
   .tecnologies-about {
-    font-size: 30px;
+    font-size: 33px;
   }
 }
 
@@ -412,8 +426,8 @@ img {
 .switch::after{
   content: "";
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 27px;
+  height: 27px;
   position: absolute;
   background: white;
   top: 0px;
@@ -427,8 +441,8 @@ img {
 
 @media (max-width: 678px) {
   .switch::after {
-    width: 23px;
-    height: 23px;
+    width: 27px;
+    height: 27px;
   }
 }
 
@@ -448,7 +462,9 @@ img {
   line-height: 30px;
   display: block;
   background: none;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 600;
 }
 
 
@@ -557,7 +573,6 @@ img {
     font-size: 20px;
     transform: translate(0);
   }
-
 }
 /* ---------------------------------- FIN CAROUSEL ------------------------------------------------- */
 

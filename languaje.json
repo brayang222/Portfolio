@@ -1,0 +1,44 @@
+{
+  "Links": {
+    "english": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About me",
+      "certifications": "Certifications"
+    },
+    "spanish": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "about": "Sobre mí",
+      "certifications": "Certificaciones"
+    }
+  },
+  "home": {
+    "english": {
+      "hello": "Hi, I'm",
+      "dev": "Web Developer"
+    },
+    "spanish": {
+      "hello": "Hola, soy",
+      "dev": "Desarrollador Web"
+    }
+  },
+  "Projects": {
+    "english": {
+      "text": "Page",
+      "code": "Code",
+      "view": "View more",
+      "less": "View less"
+    },
+    "spanish": {
+      "text": "Página",
+      "code": "Código",
+      "view": "Ver más",
+      "less": "Ver menos" 
+    }
+  },
+  "AboutMe": {
+    "english": "I am a programmer with a solid background in web development, specializing in efficient design and creating innovative solutions. My strong analytical skills and focus on the latest technologies enable me to consistently deliver high-quality results. It's a pleasure to introduce myself!",
+    "spanish": "Programador con una sólida formación en desarrollo web y habilidades destacadas en el diseño eficiente y desarrollo de soluciones excepcionales. Mi capacidad para analizar y crear, junto con mi enfoque en las últimas tecnologías, garantiza la entrega de resultados sobresalientes. ¡Encantado en conocerte!"
+  }
+}
